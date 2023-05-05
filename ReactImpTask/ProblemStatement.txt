@@ -1,0 +1,10 @@
+Problem Statement:
+
+Create a Login form with Username, password, email, phone number and  submit and display them on UI.
+
+1). Create Login Form (completed)
+2). create Object (completed)
+3). Capture (completed)
+4). send the data to parent element (completed)
+
+6). capture the data from registration(child) form to App component (parent) (completed) and then from app component(parent) to user component(child) (completed) and display the data on UI (completed).

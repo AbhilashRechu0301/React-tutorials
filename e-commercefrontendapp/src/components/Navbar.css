@@ -1,0 +1,12 @@
+.link{
+ text-decoration: none;
+ margin-left: 30px;
+ color: rgba(red, green, blue, 0);
+
+}
+
+.hover{
+
+    color: red;
+    /*background-color: pink;*/
+}
