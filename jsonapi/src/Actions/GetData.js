@@ -4,6 +4,8 @@ export default function GetData() {
 
     
     const promise = axios.get("https://jsonplaceholder.typicode.com/users")
+    //https://fakestoreapi.com/products
+    //https://jsonplaceholder.typicode.com/users
 
     console.log("promise", promise);
 

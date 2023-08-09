@@ -18,7 +18,7 @@ function FetchData(props){
      const displaydata=()=>{
         const list = Products.map(product=>{
         
-           return  <tr key={product.users}><td>{product.name}</td><td>{product.username}</td><td>{product.email}</td> <td>{product.phone}</td><td>{product.website}</td></tr>
+          return  <tr key={product.users}><td>{product.name}</td><td>{product.username}</td><td>{product.email}</td> <td>{product.phone}</td><td>{product.website}</td></tr>
         })
         return list;
         }

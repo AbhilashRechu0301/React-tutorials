@@ -1,10 +1,10 @@
 import {configureStore} from "@reduxjs/toolkit";
-import UserSlice from "./UserSlice";
+import UserReducer from "./UserSlice";
 export default configureStore({
 
     reducer:{
 
-     isUserLoggedIn: UserSlice
+     isUserLoggedIn: UserReducer
     }
 
 })

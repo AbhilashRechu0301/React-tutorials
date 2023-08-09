@@ -25,6 +25,7 @@ function FetchWeather(props){
         props.getWeather(Coords.lat, Coords.long);
     }
     
+    
 
 
     return(
@@ -37,7 +38,7 @@ function FetchWeather(props){
             <button onClick={FetchData}>FetchData</button>
             </form>
             
-            {/*props.alldetails.length*/}
+           
         </div>
     )
 }

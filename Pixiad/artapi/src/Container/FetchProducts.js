@@ -10,24 +10,31 @@ const [Products, setProducts] = useState([]);
  const fetchProducts= () => {
     console.log("fetchProducts");
     props.getProducts().then(response=>{
-        setProducts(response.payload.data);
+        setProducts(response.data);
     }); 
  };
- const displaydata=()=>{
-    const list = Products.map(product=>{
-        return  <tr key={product.id}><td>{product.category}</td><td>{product.price}</td><td>{product.title}</td> <td>{product.description}</td><td><img style={{ width: "60px", height: "64px" }} src={product.image}></img></td></tr>
-    })
-   return list;
-   }
+ //const displaydata=()=>{
+  //  const list = products.map(product=>{
+        //return  <tr key={product.id}><td>{product.category}</td><td>{product.price}</td><td>{product.title}</td> <td>{product.description}</td><td><img style={{ width: "60px", height: "64px" }} src={product.image}></img></td></tr>
+   // })
+   //return list;
+  // }
 
     return (
 
         <div>
             <h1>Products</h1>
             <button onClick ={fetchProducts}>fetch products</button> <br></br>
-               
-            {props.allproducts.length}
-            {<table className="table table-striped" >
+            <div>    {Products.map(product => (
+        <div key={product.id}>
+          <h3>{product.title}</h3>
+          <p>{product.description}</p>
+          </div>
+      ))}
+      </div>
+        
+            {/*props.allproducts.length*/}
+            {/*<table className="table table-striped" >
                     <thead>
                         <tr>
                             <th>category</th>
@@ -42,13 +49,8 @@ const [Products, setProducts] = useState([]);
                     {displaydata()}
                     </tbody>
 
-    </table>}
+    </table>*/}
         </div>
-          
-      
-     
-        
-           
     )
 }
 
