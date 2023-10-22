@@ -1,0 +1,29 @@
+.navbar{
+   
+    height: 50px;
+}
+
+.navbar-nav{
+    text-decoration: none;
+    margin-left: 370px;
+}
+.nav-link{
+    text-decoration: none;
+    margin-left: 20px;
+
+    color:rgba(rgb(4, 85, 190), green, blue, 0)
+}
+.btn {
+    align-items: center;
+    justify-content: center;
+    margin-left: 400px;
+    font-size: small;
+    color:white;
+    background-color: rgb(95, 94, 94);
+    width:80 px;
+    height: 35px;
+}
+.nav-link:hover{
+     color:black;
+     background-color: grey
+}

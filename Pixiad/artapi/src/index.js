@@ -17,7 +17,11 @@
 //reportWebVitals();
 import ReactDOM from 'react-dom/client';
 import App from './App';
-
+import React from "react";
+import "./CSS/colors.css";
+import "./CSS/font.css";
+import "./CSS/index.css";
+import "./CSS/tailwind.css";
 
 
 var root = ReactDOM.createRoot(document.getElementById("root"));

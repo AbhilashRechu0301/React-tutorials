@@ -1,0 +1,50 @@
+module.exports = {
+  mode: "jit",
+  content: [
+    "./src/**/**/*.{js,ts,jsx,tsx,html,mdx}",
+    "./src/**/*.{js,ts,jsx,tsx,html,mdx}",
+  ],
+  darkMode: "class",
+  theme: {
+    screens: { md: { max: "1050px" }, sm: { max: "550px" } },
+    extend: {
+      colors: {
+        cyan_A400: "#0feffd",
+        gray_700: "#636366",
+        gray_400: "#aeaeb2",
+        gray_401: "#c4c4c4",
+        gray_901: "#1d1d1d",
+        gray_902: "#262626",
+        gray_900_66: "#1e1e1e66",
+        gray_900: "#1c1c1c",
+        black_900_3f: "#0000003f",
+        black_900_b7: "#000000b7",
+        black_900_1e: "#0000001e",
+        bluegray_900: "#23283d",
+        white_A700_33: "#ffffff33",
+        black_900_00: "#00000000",
+        white_A700_26: "#ffffff26",
+        pink_A400: "#e10755",
+        gray_900_7f: "#1d1d1d7f",
+        black_900_28: "#00000028",
+        purple_A200: "#ca35f7",
+        white_A700: "#ffffff",
+        bluegray_901: "#333333",
+      },
+      boxShadow: {
+        bs1: "0px 16px  16px 4px #0000001e",
+        bs: "0px 40px  40px 0px #00000028",
+      },
+      fontFamily: { roboto: "Roboto" },
+      backgroundImage: {
+        gradient: "linear-gradient(180deg ,#00000000,#000000b7)",
+        gradient1: "linear-gradient(135deg ,#23283d,#1c1c1c)",
+      },
+      textShadow: {
+        ts1: "0px 4px  4px #0000003f",
+        ts: "0px 16px  16px #0000001e",
+      },
+    },
+  },
+  plugins: [require("@tailwindcss/forms"), require("tailwindcss-textshadow")],
+};
