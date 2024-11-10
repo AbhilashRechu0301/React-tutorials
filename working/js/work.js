@@ -8,3 +8,6 @@ console.log(b)
 var c = 14;
 
 console.log(c)
+
+const d = a * b * c;
+console.log(d);
