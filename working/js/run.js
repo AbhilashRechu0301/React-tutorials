@@ -5,3 +5,6 @@ var y = 2;
 
 console.log(y
 )
+ 
+var z = 5;
+console.log(z)
